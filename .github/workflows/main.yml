@@ -5,14 +5,22 @@ name: Historical Launch Fetch
 on:
   workflow_dispatch:
 
+  schedule:
+    # every hour at minute 2
+    - cron: "2 * * * *"
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
 
+    timeout-minutes: 55
+
     steps:
 
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -23,17 +31,24 @@ jobs:
         run: |
           pip install requests
 
-      - name: Run fetcher
+      - name: Run historical fetcher
         run: |
           python fetch_historical_launches.py
 
-      - name: Commit progress
+      # IMPORTANT:
+      # ALWAYS commit progress
+      # even if script partially failed
+      - name: Commit and push progress
+        if: always()
         run: |
+
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
           git add .
 
-          git commit -m "Historical launch fetch progress" || echo "No changes"
+          git commit -m "Historical crawler progress" || echo "No changes"
 
-          git push
+          git pull --rebase origin main || true
+
+          git push || true
