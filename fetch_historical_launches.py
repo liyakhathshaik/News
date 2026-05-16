@@ -6,9 +6,221 @@ from pathlib import Path
 
 BASE = "https://ll.thespacedevs.com/2.3.0/launches/"
 
-SEARCH_TERMS = [
-    # "Apollo",
-    # "Long March",
+SEARCH_TERMS =  [
+
+    # NATIONAL / STATE
+    "China",
+    "CNSA",
+    "CASC",
+    "CAST",
+    "SAST",
+    "CALT",
+
+    # LONG MARCH FAMILY
+    "Long March",
+    "CZ-",
+    "CZ-1",
+    "CZ-2",
+    "CZ-2C",
+    "CZ-2D",
+    "CZ-2F",
+    "CZ-3",
+    "CZ-3A",
+    "CZ-3B",
+    "CZ-3C",
+    "CZ-4",
+    "CZ-4B",
+    "CZ-4C",
+    "CZ-5",
+    "CZ-5B",
+    "CZ-6",
+    "CZ-6A",
+    "CZ-7",
+    "CZ-7A",
+    "CZ-8",
+    "CZ-11",
+
+    # HUMAN SPACEFLIGHT
+    "Shenzhou",
+    "Tianzhou",
+    "Tiangong",
+
+    # LUNAR / PLANETARY
+    "Chang'e",
+    "Tianwen",
+
+    # EARLY / HISTORIC
+    "Dong Fang Hong",
+    "Fengyun",
+    "Yaogan",
+    "Beidou",
+
+    # COMMERCIAL / MODERN
+    "ExPace",
+    "Kuaizhou",
+    "i-Space",
+    "Hyperbola",
+    "LandSpace",
+    "ZhuQue",
+    "Galactic Energy",
+    "Ceres-1",
+    "CAS Space",
+    "Space Pioneer",
+    "Tianlong",
+
+    # SEA LAUNCH / SPECIAL
+    "Smart Dragon",
+    "Jielong",
+
+    # MILITARY / STRATEGIC
+    "Yuanwang",
+
+    # HEAVY PROGRAMS
+    "Heavy Lift",
+
+    # NATIONAL / AGENCIES
+    "USA",
+    "NASA",
+    "USAF",
+    "USSF",
+    "NRO",
+
+    # EARLY AMERICAN PROGRAMS
+    "Mercury",
+    "Gemini",
+    "Apollo",
+    "Skylab",
+    "Apollo-Soyuz",
+
+    # SHUTTLE PROGRAM
+    "Shuttle",
+    "STS-",
+    "Space Shuttle",
+    "Columbia",
+    "Challenger",
+    "Discovery",
+    "Atlantis",
+    "Endeavour",
+
+    # ARTEMIS / MODERN HUMAN SPACEFLIGHT
+    "Artemis",
+    "Orion",
+    "Crew Dragon",
+    "Crew-1",
+    "Crew-2",
+    "Crew-3",
+    "Crew-4",
+    "Crew-5",
+    "Crew-6",
+    "Crew-7",
+    "Demo-2",
+
+    # SPACE STATION
+    "ISS",
+    "Skylab",
+
+    # MARS
+    "Viking",
+    "Pathfinder",
+    "Spirit",
+    "Opportunity",
+    "Phoenix",
+    "Curiosity",
+    "Perseverance",
+    "Ingenuity",
+
+    # DEEP SPACE / SCIENCE
+    "Voyager",
+    "Pioneer",
+    "Galileo",
+    "Cassini",
+    "Juno",
+    "New Horizons",
+    "Hubble",
+    "JWST",
+    "James Webb",
+    "Kepler",
+    "TESS",
+    "Chandra",
+    "Spitzer",
+
+    # SATURN FAMILY
+    "Saturn I",
+    "Saturn IB",
+    "Saturn V",
+
+    # ATLAS FAMILY
+    "Atlas",
+    "Atlas Agena",
+    "Atlas Centaur",
+    "Atlas II",
+    "Atlas III",
+    "Atlas V",
+
+    # DELTA FAMILY
+    "Delta",
+    "Delta II",
+    "Delta III",
+    "Delta IV",
+    "Delta IV Heavy",
+
+    # TITAN FAMILY
+    "Titan",
+    "Titan II",
+    "Titan III",
+    "Titan IV",
+
+    # OTHER HISTORIC ROCKETS
+    "Thor",
+    "Thor-Delta",
+    "Redstone",
+    "Little Joe",
+    "Scout",
+    "Pegasus",
+    "Minotaur",
+
+    # MODERN COMMERCIAL
+    "Falcon 1",
+    "Falcon 9",
+    "Falcon Heavy",
+    "Starship",
+    "Dragon",
+    "Starlink",
+
+    # ULA / BOEING / LOCKHEED
+    "ULA",
+
+    # NORTHROP
+    "Antares",
+
+    # NASA HEAVY
+    "SLS",
+
+    # BLUE ORIGIN
+    "New Shepard",
+    "New Glenn",
+
+    # VIRGIN ORBIT
+    "LauncherOne",
+
+    # RELATIVITY
+    "Terran",
+
+    # FIREFLY
+    "Alpha",
+
+    # MILITARY / STRATEGIC
+    "DSP",
+    "KH-",
+    "Lacrosse",
+    "Milstar",
+    "Defense Support Program",
+
+    # SPECIAL / HISTORIC
+    "Apollo 11",
+    "Apollo 13",
+    "Challenger STS-51-L",
+    "Columbia STS-107",
 ]
 
 LIMIT = 100
